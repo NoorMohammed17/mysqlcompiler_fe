@@ -1,0 +1,91 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar button {
+  padding: 6px 12px;
+  background-color: #007acc;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.editor-container {
+  display: flex;
+  width: 70%;
+  background-color: #2d2d2d;
+  color: white;
+  overflow: auto;
+}
+
+.line-numbers {
+  background-color: #1e1e1e;
+  color: #bbb;
+  padding: 10px;
+  text-align: right;
+  user-select: none;
+  min-width: 40px;
+}
+
+.editor {
+  flex: 1;
+  
+  overflow: auto;
+  white-space: pre;
+  min-height: 100%;
+}
+
+.output {
+  width: 30%;
+  padding: 20px;
+  background-color: #f4f4f4;
+  overflow: auto;
+  border-left: 1px solid #ccc;
+}
+
+.output .error {
+  color: red;
+  font-weight: bold;
+}
+
+.output table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.output th, .output td {
+  border: 1px solid #999;
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.output th {
+  background-color: #ddd;
+}
