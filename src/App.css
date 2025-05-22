@@ -13,7 +13,8 @@ html, body {
 }
 
 .navbar {
-  background-color: #1e1e1e;
+  /* background-color: #1e1e1e; */
+  background-color: rgb(40,42,53);
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -68,7 +69,12 @@ html, body {
   background-color: #f4f4f4;
   overflow: auto;
   border-left: 1px solid #ccc;
+  font-size: small;
 }
+ .output h2{
+  font-size: 18px;
+  margin-bottom: 10px;
+ }
 
 .output .error {
   color: red;
